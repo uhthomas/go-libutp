@@ -20,6 +20,7 @@
  * THE SOFTWARE.
  */
 
+#ifdef WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <winsock2.h>
@@ -106,3 +107,4 @@ int libutp::inet_pton(int af, const char* src, void* dest)
 
 	return result == SOCKET_ERROR ? -1 : 1;
 }
+#endif
