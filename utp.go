@@ -9,7 +9,7 @@ package utp
 #cgo CXXFLAGS: -Wno-unused-const-variable
 // Windows additional flags
 #cgo windows LDFLAGS: -lws2_32
-#cgo windows CXXFLAGS: -D_WIN32_WINNT=0x600
+#cgo windows CXXFLAGS: -D_WIN32_WINNT=0x501
 #include "utp.h"
 
 uint64_t firewallCallback(utp_callback_arguments *);
