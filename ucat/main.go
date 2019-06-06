@@ -10,7 +10,7 @@ import (
 	_ "github.com/anacrolix/envpprof"
 	"github.com/anacrolix/tagflag"
 
-	"github.com/anacrolix/go-libutp"
+	"github.com/getlantern/go-libutp"
 )
 
 func getConn(listen bool, addr string, s *utp.Socket) net.Conn {

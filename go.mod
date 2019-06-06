@@ -1,4 +1,4 @@
-module github.com/anacrolix/go-libutp
+module github.com/getlantern/go-libutp
 
 require (
 	github.com/anacrolix/envpprof v0.0.0-20180404065416-323002cec2fa
