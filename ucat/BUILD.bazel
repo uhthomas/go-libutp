@@ -1,0 +1,19 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "ucat_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/anacrolix/go-libutp/ucat",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//:go-libutp",
+        "@com_github_anacrolix_envpprof//:envpprof",
+        "@com_github_anacrolix_tagflag//:tagflag",
+    ],
+)
+
+go_binary(
+    name = "ucat",
+    embed = [":ucat_lib"],
+    visibility = ["//visibility:public"],
+)
