@@ -40,7 +40,7 @@ go_library(
         ],
         "//conditions:default": [],
     }),
-    copts = [
+    cxxopts = [
         "-DPOSIX -DUTP_DEBUG_LOGGING=0",
         "-Wall -O3",
         "-Wall -O3 -fPIC -Wno-sign-compare",
